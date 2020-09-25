@@ -1,0 +1,51 @@
+jovyan@jupyter-guwa4340:~/Intensive-Programming-Workshop/PE4$ ./TicTacToe 
+First Player will be marked with 11
+Second Player will be marked with 10
+ 0 1 2
+ 3 4 5
+ 6 7 8
+Enter Your Choice As The Number Value
+0
+ 11 1 2
+ 3 4 5
+ 6 7 8
+Enter Your Choice As The Number Value
+4
+ 11 1 2
+ 3 10 5
+ 6 7 8
+Enter Your Choice As The Number Value
+6
+ 11 1 2
+ 3 10 5
+ 11 7 8
+Enter Your Choice As The Number Value
+3
+ 11 1 2
+ 10 10 5
+ 11 7 8
+Enter Your Choice As The Number Value
+5
+ 11 1 2
+ 10 10 11
+ 11 7 8
+Enter Your Choice As The Number Value
+1
+ 11 10 2
+ 10 10 11
+ 11 7 8
+Enter Your Choice As The Number Value
+7
+ 11 10 2
+ 10 10 11
+ 11 11 8
+Enter Your Choice As The Number Value
+8
+ 11 10 2
+ 10 10 11
+ 11 11 10
+Enter Your Choice As The Number Value
+2
+ 11 10 11
+ 10 10 11
+ 11 11 10
