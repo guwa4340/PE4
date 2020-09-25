@@ -13,3 +13,8 @@ void DisplayBoard(string * board){
     cout << board << endl;
 }
 
+string GetPlayerChoice(){
+    cin >> choice >> endl;
+    return choice;
+}
+
