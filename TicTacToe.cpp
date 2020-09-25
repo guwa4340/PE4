@@ -47,44 +47,57 @@ int GetPlayerChoice(){
     return choice;
 }
 
-void PlaceMarker(int ** b,int mark,int loc){
+int ** PlaceMarker(int ** b,int mark,int loc){
     if(loc == 0){
         b[0][0] = mark;
     }
     else if (loc == 1){
         b[0][1] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 2){
         b[0][2] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 3){
         b[1][0] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 4){
         b[1][1] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 5){
         b[1][2] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 6){
         b[2][0] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 7){
         b[2][1] = mark;
     }
-    else if (loc == 1){
+    else if (loc == 8){
         b[2][2] = mark;
     }
+    return b;
 }
 
 int main(){
-    //test create board function
+    cout << "First Player will be marked with 11" << endl;
+    cout << "Second Player will be marked with 10" << endl;
+    int choice;
     int** board = CreateBoard();
-    //cout << "Past Create Board" << endl;
-    //test display board
+    for(int i = 0; i < 9; i++){
+        //test create board function
+        //cout << "Past Create Board" << endl;
+        //test display board
+        DisplayBoard(board);
+        //cout << "Past Display Board" << endl;
+        //test player choice
+        choice = GetPlayerChoice();
+        if(i%2){
+            board = PlaceMarker(board,10,choice);
+        }
+        else{
+            board = PlaceMarker(board,11,choice);
+        }
+    }
     DisplayBoard(board);
-    //cout << "Past Display Board" << endl;
-    //test player choice
-    GetPlayerChoice();
     return 0;
 }
