@@ -9,6 +9,7 @@ string * CreateBoard(){
     return board;
 }
 
+
 void DisplayBoard(string * b){
     int count = 0;
     for(int i = 0;i<3;i++){
@@ -23,7 +24,7 @@ void DisplayBoard(string * b){
             }
         }
     }
-}
+
 
 int main(){
     return 0;
