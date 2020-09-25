@@ -38,15 +38,44 @@ void DisplayBoard(int ** b){
             }
         }
     }
+}
 
-
-string GetPlayerChoice(){
-    string choice;
+int GetPlayerChoice(){
+    int choice;
     cout << "Enter Your Choice As The Number Value" << endl;
     cin >> choice;
     return choice;
 }
 
+void PlaceMarker(int ** b,int mark,int loc){
+    if(loc == 0){
+        b[0][0] = mark;
+    }
+    else if (loc == 1){
+        b[0][1] = mark;
+    }
+    else if (loc == 1){
+        b[0][2] = mark;
+    }
+    else if (loc == 1){
+        b[1][0] = mark;
+    }
+    else if (loc == 1){
+        b[1][1] = mark;
+    }
+    else if (loc == 1){
+        b[1][2] = mark;
+    }
+    else if (loc == 1){
+        b[2][0] = mark;
+    }
+    else if (loc == 1){
+        b[2][1] = mark;
+    }
+    else if (loc == 1){
+        b[2][2] = mark;
+    }
+}
 
 int main(){
     //test create board function
