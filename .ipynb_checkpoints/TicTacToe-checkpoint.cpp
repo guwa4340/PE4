@@ -38,7 +38,7 @@ void DisplayBoard(int ** b){
             }
         }
     }
-}
+
 
 string GetPlayerChoice(){
     string choice;
