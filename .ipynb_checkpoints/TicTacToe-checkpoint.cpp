@@ -6,5 +6,7 @@ using namespace std;
 
 string * CreateBoard(){
     string board [] = {{'','',''},{'','',''},{'','',''}};
+    return board;
 }
+
 
