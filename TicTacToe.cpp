@@ -9,4 +9,7 @@ string * CreateBoard(){
     return board;
 }
 
+void DisplayBoard(string * board){
+    cout << board << endl;
+}
 
